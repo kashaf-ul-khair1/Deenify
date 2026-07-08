@@ -1,64 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<title>FAQs</title>
-  <style>
-    body {
-      background-color: white; 
-      color: #195329; 
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #195329; 
-    }
-
-    p {
-      margin: 15px 0;
-    }
-
-    strong {
-      font-weight: bold;
-    }
-
-    .question {
-      color: #195329; 
-    }
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-  </style>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Deenify</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <div class="container">
-  <h2>FAQs</h2>
-  <p class="question"><strong>How do you ensure the app is aligned with Islamic principles and teachings?</strong></p>
-  <p>We consult with Islamic scholars during every stage of development to ensure all features, content, and guidelines adhere to Sharia principles. Additionally, we allow users to submit feedback and questions to ensure inclusivity and accuracy.</p>
 
-  <p class="question"><strong>What trends in the Muslim population or social media usage support your app's potential success?</strong></p>
-  <p>With a growing global Muslim population, currently over 1.9 billion, and the increasing use of smartphones and social media platforms in Muslim-majority countries, there’s a clear opportunity to engage this audience digitally. Reports show that religious apps are among the top downloads in these regions.</p>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">☪</div>
+        <span class="nav-logo-text">Deen<span>ify</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <p class="question"><strong>What is your plan for capturing users in regions with limited internet access or technology adoption?</strong></p>
-  <p>Our app will be completely offline in order to work in regions with limited internet access.</p>
+  <div class="page-wrapper">
 
-  <p class="question"><strong>How do you plan to generate revenue? Are there in-app purchases or premium features?</strong></p>
-  <p>The app is completely free to download. We only wanted to help our Muslim community in struggling with their religion norms.</p>
+    <div class="page-hero">
+      <p class="breadcrumb"><a href="index.html">Home</a><span>/</span> FAQ</p>
+      <span class="section-label">Got Questions?</span>
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about Deenify — from features to our vision.</p>
+    </div>
 
-  <p class="question"><strong>How will the app encourage consistent use and adherence to religious practices?</strong></p>
-  <p>Daily reminders, motivational quotes from the Quran and Hadith and rewards for consistency will encourage regular use. Users can also set personal goals to track their spiritual journey.</p>
+    <section class="section">
+      <div class="section-inner">
 
-  <p class="question"><strong>What steps will you take if the app receives negative feedback from scholars or users?</strong></p>
-  <p>We will treat feedback as an opportunity to improve, consulting with scholars and implementing necessary changes to address concerns while keeping the app user-friendly.</p>
+        <div class="divider"><span class="divider-star">✦</span></div>
 
-  <p class="question"><strong>How do you envision the app contributing to the global Muslim community?</strong></p>
-  <p>By promoting spiritual growth, fostering a global community, and making Islamic practices more accessible, the app can help Muslims worldwide stay connected to their faith.</p>
-</div>
+        <div class="faq-list">
+
+          <div class="faq-item open">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">What is Deenify?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Deenify is an all-in-one Islamic companion app designed to help Muslims stay connected to their Deen in their busy daily lives. It brings together prayer times, Quran, Hadith, Zakat calculator, Dhikr counter, and Islamic calendar in one clean and easy-to-use interface.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">How are prayer times calculated?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Prayer times are calculated using your device's GPS location combined with standard Islamic astronomical algorithms. The app supports multiple calculation methods including ISNA, MWL, Karachi, and Egypt, so you can choose the method most appropriate for your region and school of thought.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">Which Quran translations are available?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Deenify offers multiple Quran translations in English, Urdu, and other major languages. English translations include those by Sahih International, Pickthall, Yusuf Ali, and Dr. Mustafa Khattab. The full Arabic text is always available alongside any translation.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">Are the Hadith sources authentic?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes. All Hadith in Deenify are sourced from the six canonical Hadith collections (Kutub al-Sittah): Sahih al-Bukhari, Sahih Muslim, Sunan Abu Dawud, Sunan at-Tirmidhi, Sunan an-Nasa'i, and Sunan Ibn Majah. Each Hadith includes its chain of narration and authenticity grade where applicable.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">How does the Zakat calculator work?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              You enter your assets — cash, gold, silver, business inventory, investments, and receivables — and the calculator applies the current Nisab threshold and the standard 2.5% Zakat rate. The Nisab values are updated based on current gold and silver market prices, ensuring your calculation is always accurate.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">What inspired the creation of Deenify?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              The idea was born from a shared concern among our team: that Muslims, especially young people, are gradually drifting away from their religious practice due to the demands of modern life. We wanted to create a digital tool that does not just inform but actually facilitates practice — making it easier to pray on time, read Quran regularly, and stay connected to Islamic values every single day.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">Is Deenify free to use?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              This project is currently an ICT course prototype. All features showcased on this website represent our vision for a fully developed app. Our goal has always been to make Deenify freely accessible to Muslims worldwide, without paywalls or subscriptions for essential Islamic tools.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">Who built Deenify?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Deenify was designed and developed by Tayyaba Zubaid and Kashaf-ul-khair Khalid as part of their ICT project at COMSATS University. The project was guided by their instructor and represents many weeks of collaboration, research, and user feedback from the Muslim community.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-question-text">Can I suggest new features?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Absolutely. We welcome all feedback and suggestions. Please use the Contact page to reach out directly to our team. We carefully read every message and incorporate community feedback into our development roadmap.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="divider" style="margin-top: 3rem;"><span class="divider-star">✦</span></div>
+
+        <div class="text-center" style="margin-top: 2rem;">
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Still have a question? Reach out to us directly.</p>
+          <a href="contact.html" class="btn btn-green">Contact Us</a>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Deen<span>ify</span></div>
+          <p class="footer-brand-desc">Connecting Deen &amp; Dunya — one feature at a time.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Team</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Deenify — ICT Project</span>
+        <span class="footer-tagline">Connecting Deen &amp; Dunya ☪</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      links.classList.toggle('open');
+    });
+
+    function toggleFaq(el) {
+      const item = el.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+  </script>
+</body>
 </html>

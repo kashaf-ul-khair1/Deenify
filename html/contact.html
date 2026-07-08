@@ -1,77 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Deenify</title>
+  <link rel="stylesheet" href="../css/style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
+    /* Contact page extra styles */
+    .contact-intro {
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      text-align: center;
     }
 
-    .container {
-      max-width: 400px;
+    .contact-intro p {
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .feedback-box {
+      background: linear-gradient(135deg, rgba(25,83,41,0.05), rgba(201,168,76,0.06));
+      border: 1px solid rgba(25,83,41,0.12);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+      max-width: 600px;
       margin: 0 auto;
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
       text-align: center;
-      color: #195329;
     }
 
-    .contact-info {
-      margin-bottom: 20px;
-      margin-top: 20px;
+    .feedback-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--green-deep);
+      margin-bottom: 0.8rem;
     }
 
-    .contact-info p {
-      font-size: 16px;
-      color: #195329;
-      margin-bottom: 10px;
-    }
-
-    .button {
-      display: block;
-      width: 200px;
-      margin: 10px auto;
-      padding: 8px;
-      background-color: #195329;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-
-    .button:hover {
-      background-color: #144220;
+    .feedback-box p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.75;
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <h1>Contact Us</h1>
-    <div class="contact-info">
-      <h3>Tayyaba Zubaid</h3>
-      <p><strong>Email:</strong> 24l-0035@qu.edu.pk </p>
-      <p><strong>Phone:</strong> +923341208076</p>
-      <a href="mailto:24l-0035@qu.edu.pk" class="button">Send Email to Tayyaba Zubaid</a>
-    </div>
-    <div class="contact-info">
-      <h3>Kashaf-ul-khair Khalid</h3>
-      <p><strong>Email:</strong> 24l-0037@qu.edu.pk</p>
-      <p><strong>Phone:</strong> +923214110620</p>
-      <a href="mailto:24l-0037@qu.edu.pk" class="button">Send Email to Kashaf-ul-khair</a>
-    </div>
-    
-  </div>
-</body>
 
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">☪</div>
+        <span class="nav-logo-text">Deen<span>ify</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-hero">
+      <p class="breadcrumb"><a href="index.html">Home</a><span>/</span> Contact</p>
+      <span class="section-label">Reach Out</span>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear your thoughts, suggestions, or feedback on Deenify.</p>
+    </div>
+
+    <section class="section">
+      <div class="section-inner">
+
+        <div class="contact-intro">
+          <p>
+            Deenify was built by a small team with a big vision. Whether you have a feature request, a question, or just want to share how we can better serve the community, our inboxes are always open.
+          </p>
+        </div>
+
+        <div class="divider"><span class="divider-star">✦</span></div>
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <div class="contact-avatar">T</div>
+            <div class="contact-name">Tayyaba Zubaid</div>
+            <div class="contact-detail">
+              <span class="icon">✉</span>
+              <span>24l-0035@qu.edu.pk</span>
+            </div>
+            <div class="contact-detail">
+              <span class="icon">📞</span>
+              <span>+92 334 120 8076</span>
+            </div>
+            <div class="contact-actions">
+              <a href="mailto:24l-0035@qu.edu.pk" class="btn btn-green">Send Email</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-avatar">K</div>
+            <div class="contact-name">Kashaf-ul-khair Khalid</div>
+            <div class="contact-detail">
+              <span class="icon">✉</span>
+              <span>24l-0037@qu.edu.pk</span>
+            </div>
+            <div class="contact-detail">
+              <span class="icon">📞</span>
+              <span>+92 321 411 0620</span>
+            </div>
+            <div class="contact-actions">
+              <a href="mailto:24l-0037@qu.edu.pk" class="btn btn-green">Send Email</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="divider" style="margin-top: 3.5rem;"><span class="divider-star">✦</span></div>
+
+        <div class="feedback-box">
+          <h3>Share Your Feedback</h3>
+          <p>
+            Your input directly shapes how Deenify evolves. If there is a feature you wish existed, or something that could work better, please let us know. We built this app for the community, and the community knows best what it needs.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <a href="mailto:24l-0035@qu.edu.pk?subject=Deenify Feedback" class="btn btn-primary">Share Feedback</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Deen<span>ify</span></div>
+          <p class="footer-brand-desc">Connecting Deen &amp; Dunya — one feature at a time.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Team</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Deenify — ICT Project</span>
+        <span class="footer-tagline">Connecting Deen &amp; Dunya ☪</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      links.classList.toggle('open');
+    });
+  </script>
+</body>
 </html>

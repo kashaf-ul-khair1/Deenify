@@ -1,73 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Features</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-
-    div {
-      max-width: 400px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      text-align: center;
-      color: #195329;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      background-color: #e6f3ec;
-      margin-bottom: 10px;
-      padding: 15px;
-      border: 1px solid #195329;
-      border-radius: 6px;
-      color: #195329;
-      font-weight: bold;
-      font-size: 16px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — Deenify</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-  <div>
-    <h1>App Features</h1>
-    <ul>
-      <li>Prayer Time Notifications</li>
-      <li>Quran Reminders</li>
-      <li>Charity Suggestions</li>
-      <li>Islamic Quizzes</li>
-      <li>Habit Formation Tools</li>
-      <li>Streak Tracking for Prayers and Good Deeds</li>
-      <li>Badges and Rewards System</li>
-      <li>Personalized Spiritual Insights and Reports</li>
-      <li>Offline Access for Quran and Dua Guides</li>
-      <li>Multilingual Support</li>
-      <li>Seasonal Features (e.g., Ramadan, Hajj guides)</li>
-      <li>Habit-Stacking Strategies for Consistency</li>
-      <li>Inspirational Notifications with Islamic Quotes and Hadiths</li>
-      <li>Daily Islamic Knowledge Bites (e.g., Tafsir, Hadith, History)</li>
-      <li>Eco-Friendly Initiatives (e.g., Tree-Planting Rewards)</li>
-      <li>Privacy and Ethical Use of User Data</li>
-      <li>Customizable Notifications for Different Islamic Activities</li>
-      <li>Feedback-Based Feature Updates</li>
-    </ul>
-  </div>
-</body>
 
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">☪</div>
+        <span class="nav-logo-text">Deen<span>ify</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <p class="breadcrumb"><a href="index.html">Home</a><span>/</span> Features</p>
+      <span class="section-label">What We Built</span>
+      <h1>App Features</h1>
+      <p>Every tool in Deenify is crafted to support your spiritual life — from Fajr to Isha and everything in between.</p>
+    </div>
+
+    <!-- Features Detail -->
+    <section class="section">
+      <div class="section-inner">
+
+        <div class="feature-detail">
+          <div class="feature-visual">
+            <span>🕌</span>
+            <span class="feature-visual-label">Prayer Times</span>
+          </div>
+          <div class="feature-content">
+            <span class="section-label">Core Feature</span>
+            <h3>Precise Prayer Times &amp; Qibla</h3>
+            <p>Never miss a Salah again. Deenify calculates accurate prayer times for your exact location using reliable astronomical algorithms.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet"><span class="bullet-dot"></span>Location-based Fajr, Dhuhr, Asr, Maghrib, Isha times</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Customizable Adhan reminders with multiple sounds</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Qibla direction compass using device sensors</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Hijri date displayed alongside Gregorian</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-detail reverse">
+          <div class="feature-visual">
+            <span>📖</span>
+            <span class="feature-visual-label">Holy Quran</span>
+          </div>
+          <div class="feature-content">
+            <span class="section-label">Spiritual Growth</span>
+            <h3>Quran Reader &amp; Audio</h3>
+            <p>Explore the Holy Quran with clarity and depth. Read in Arabic, follow the translation, and listen to world-renowned reciters.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet"><span class="bullet-dot"></span>Full Arabic text with multiple translations</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Audio recitation by famous Qaris</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Bookmark verses and track reading progress</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Verse-by-verse Tafsir and commentary</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-detail">
+          <div class="feature-visual">
+            <span>🌙</span>
+            <span class="feature-visual-label">Hadith</span>
+          </div>
+          <div class="feature-content">
+            <span class="section-label">Prophetic Wisdom</span>
+            <h3>Hadith of the Day</h3>
+            <p>Start each day with wisdom from the Prophet ﷺ. Browse authentic Hadith collections with grading, context, and explanation.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet"><span class="bullet-dot"></span>Collections from Bukhari, Muslim, Abu Dawud, and more</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Daily push notification with a new Hadith</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Search and filter by topic or narrator</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Share Hadith easily with family and friends</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-detail reverse">
+          <div class="feature-visual">
+            <span>🧮</span>
+            <span class="feature-visual-label">Zakat</span>
+          </div>
+          <div class="feature-content">
+            <span class="section-label">Financial Worship</span>
+            <h3>Zakat Calculator</h3>
+            <p>Fulfil one of Islam's Five Pillars with confidence. Our Zakat calculator handles all major asset types with current Nisab values.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet"><span class="bullet-dot"></span>Gold, silver, cash, and savings calculation</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Business inventory and receivables</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Real-time Nisab values based on gold/silver prices</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Guidance on eligible recipients (Masarif)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-detail">
+          <div class="feature-visual">
+            <span>📿</span>
+            <span class="feature-visual-label">Tasbih</span>
+          </div>
+          <div class="feature-content">
+            <span class="section-label">Daily Dhikr</span>
+            <h3>Digital Tasbih &amp; Dhikr</h3>
+            <p>Build a daily habit of remembrance. Track your Dhikr with a beautiful counter that supports custom phrases, goals, and streaks.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet"><span class="bullet-dot"></span>One-tap counting with haptic feedback</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Pre-loaded morning and evening Adhkar</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Set daily targets and track your streak</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Custom phrases for personal Dhikr routines</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-detail reverse">
+          <div class="feature-visual">
+            <span>🗓️</span>
+            <span class="feature-visual-label">Calendar</span>
+          </div>
+          <div class="feature-content">
+            <span class="section-label">Islamic Time</span>
+            <h3>Islamic Calendar &amp; Events</h3>
+            <p>Stay aware of the Hijri date and never miss important Islamic occasions — from Ramadan to Eid and beyond.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet"><span class="bullet-dot"></span>Full Hijri calendar with Gregorian sync</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Key Islamic dates and observances</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Ramadan countdown with Suhoor and Iftar times</li>
+              <li class="feature-bullet"><span class="bullet-dot"></span>Personal goal setting for Islamic milestones</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-alt">
+      <div class="section-inner text-center">
+        <span class="section-label">Alhamdulillah</span>
+        <h2 class="section-title">All Features. One App.</h2>
+        <p class="section-sub">
+          Deenify was built with a single purpose: to make it easier for every Muslim to practise their Deen with consistency and joy.
+        </p>
+        <div style="margin-top: 2rem;">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Deen<span>ify</span></div>
+          <p class="footer-brand-desc">Connecting Deen &amp; Dunya — one feature at a time.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Team</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Deenify — ICT Project</span>
+        <span class="footer-tagline">Connecting Deen &amp; Dunya ☪</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      links.classList.toggle('open');
+    });
+  </script>
+</body>
 </html>
